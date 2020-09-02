@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro";
+}
+.big-box {
+  border-bottom: 1px solid #e0dede;
+}
+.container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+  justify-content: center;
+  height: 54px;
+  z-index: 100;
+}
+
+.search input {
+  position: relative;
+  outline: 0;
+  border-radius: 2px;
+  padding: 6px;
+  width: 200px;
+  background-color: #fafafa;
+  border: 1px solid #e0dede;
+}
+
+.search input:placeholder {
+  text-align: center;
+}
+
+.navbar {
+  width: 935px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.navbar__logo {
+  font-size: 35px;
+
+  color: white;
+}
+.navbar__logo i {
+  color: black;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: black;
+  display: flex;
+  padding-left: 0;
+  font-size: 25px;
+}
+
+.navbar__icons li {
+  padding-right: 25px;
+}
+.navbar__icons > li:nth-child(5) {
+  padding: 0;
+}
+
+.main-container {
+  padding-top: 54px;
+  background-color: #fafafa;
+  height: 150vh;
+  width: 100%;
+  position: relative;
+}
+.main-box {
+  width: 935px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 54px;
+}
+.feeds {
+  width: 614px;
+}
+.storys-container {
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  height: 116px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 24px;
+  background-color: white;
+  padding: 16px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+ul.storys {
+}
+.storys {
+  display: flex;
+  list-style: none;
+  margin-left: 0px;
+}
+.story {
+  width: 66px;
+  margin-left: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: none;
+}
+.storys.active {
+  transition: 0.5s 0s;
+}
+.story > .story-name {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.story-image {
+  background: linear-gradient(25deg, rgb(246, 138, 59), rgb(181, 18, 127));
+  border-radius: 100%;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.story-image-cover {
+  width: 61.4px;
+  height: 61.4px;
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  position: relative;
+  left: 0.3px;
+  top: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.story-image-cover > img {
+  border-radius: 100%;
+  border: 0.5px solid lightgray;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 614px;
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  background-color: white;
+}
+.post {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 614px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.post-who {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.post-doLeft {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  width: 95%;
+}
+.post-do-like {
+  margin-right: 10px;
+}
+.post-do-commend {
+  margin-right: 10px;
+}
+.post-do-share {
+  margin-right: 10px;
+}
+.post-do-bookmark {
+  margin-left: 460px;
+}
+.post-pic {
+  border-radius: 50%;
+}
+.post-who-img {
+  background-size: cover;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+.post-who-name {
+  font-size: 14px;
+  margin-left: 16px;
+}
+.post-who-more {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  right: 0px;
+}
+.post-who-like {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  padding: 0 16px;
+}
+.post-description {
+  font-size: 14px;
+  margin: 0 0 8px;
+  padding: 0 16px;
+}
+.post-time {
+  font-size: 10px;
+  margin: 0 0 8px;
+  padding: 0 16px;
+}
+.best-comment {
+  margin-left: 8px;
+}
+.main-right {
+  position: fixed;
+  width: 293px;
+  box-sizing: border-box;
+  height: 100vh;
+  right: calc(50% - 467.5px);
+  top: 88px;
+  margin-right: 0;
+  text-align: center;
+}
+
+.main-right .profile-pic {
+  border-radius: 50%;
+}
+.my-profile-img {
+  margin: 20px 0px 20px 0px;
+  width: 293px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.my-profile-name {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.recommend-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.recommend-title {
+  font-size: 14px;
+}
+.recommend-all {
+  font-size: 12px;
+}
+
+.botc-id {
+  display: flex;
+  padding: 10px 0 0 0;
+  align-items: center;
+}
+
+.botc-know {
+  margin-left: 7px;
+  margin-right: 125px;
+}
+.botc-follow {
+  border-style: none;
+  background-color: white;
+  color: #0095f6;
+  font-weight: bold;
+  padding-right: 0px;
+}
+
+.footer {
+  width: 310px;
+  height: 65px;
+  text-align: left;
+  font-size: 11px;
+  color: #c7c7c7;
+  margin-top: 25px;
+  padding: 11px 43px 0px 0px;
+  position: relative;
+}
+.footer-list {
+  display: inline;
+  list-style: none;
+  padding-left: 0;
+}
+.footer-list > li {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.copyright {
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+}
+.footer-list > li::after {
+  content: "•";
+  font-size: 1px;
+}
+.footer-list > li:last-child::after {
+  content: "";
+  color: #c7c7c7;
+  font-size: 11px;
+}
+
+.commend-container {
+  position: relative;
+  padding: 8px 16px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.commend {
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.commend-box {
+  position: relative;
+  max-height: 80px;
+  min-height: 18px;
+  width: 100%;
+}
+
+.commend-box > textarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  text-decoration: none;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.commend-box > button {
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  color: #b1d6f7;
+  background-color: transparent;
+}
